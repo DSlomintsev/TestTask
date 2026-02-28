@@ -1,0 +1,17 @@
+{
+    "name": "DSiT.Azulon.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0a70b3f5ff0b5475ea38c106f5e0df43",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
