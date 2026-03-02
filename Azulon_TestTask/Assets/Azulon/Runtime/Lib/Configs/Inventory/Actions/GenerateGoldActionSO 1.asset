@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 689ad8bdcca54375bd9d0aa859795ad9, type: 3}
-  m_Name: Fireball_1SO
-  m_EditorClassIdentifier: Azulon.Runtime::Azulon.Configs.Inventory.Items.AttackItemSO
-  Id: 3
-  CategoryId: 1
-  Damage: 0
+  m_Script: {fileID: 11500000, guid: f49a0191d95e49858f253e3411bc2b52, type: 3}
+  m_Name: GenerateGoldActionSO 1
+  m_EditorClassIdentifier: DSiT.Azulon.Runtime::Azulon.Configs.Actions.GenerateGoldActionSO
+  Amount: 10

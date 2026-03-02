@@ -24,22 +24,22 @@ namespace Azulon.Services.Shops
             // load shop itemList from externalData service
             // would be done async
 
-            _shopModel.AddItem(new ShopItemConfig("Fireball_0_Shop", "LightWeapon", new ItemPacks
+            _shopModel.AddItem(new ShopItemConfig("GOLD_GENERATOR_0_Shop", "LightWeapon", new ItemPacks
             {
                 Items = new()
                 {
-                    new(ItemID.FIREBALL_0, 1)
+                    new(ItemID.GOLD_GENERATOR_0, 1)
                 }
-            }, new ItemPack(ItemID.GOLD, 100)));
+            }, new ItemPack(ItemID.GOLD, 10)));
             
-            _shopModel.AddItem(new ShopItemConfig("Fireball_1_Shop", "MoreDangerousWeapon", new ItemPacks(new()
+            _shopModel.AddItem(new ShopItemConfig("GOLD_GENERATOR_1_Shop", "MoreDangerousWeapon", new ItemPacks(new()
             {
-                new(ItemID.FIREBALL_1, 1),
+                new(ItemID.GOLD_GENERATOR_1, 1),
             }), new ItemPack(ItemID.GOLD, 200)));
             
-            _shopModel.AddItem(new ShopItemConfig("Fireball_2_Shop", "MoreDangerousWeapon", new ItemPacks(new()
+            _shopModel.AddItem(new ShopItemConfig("GOLD_GENERATOR_2_Shop", "MoreDangerousWeapon", new ItemPacks(new()
             {
-                new(ItemID.FIREBALL_2, 1),
+                new(ItemID.GOLD_GENERATOR_2, 1),
             }), new ItemPack(ItemID.GOLD, 300)));
             
             _shopModel.AddItem(new ShopItemConfig("Shield_0_Shop", "LightDef", new ItemPacks(new()
@@ -59,7 +59,7 @@ namespace Azulon.Services.Shops
             
             _shopModel.AddItem(new ShopItemConfig("AllInOnePack", "Events", new ItemPacks(new()
             {
-                new(ItemID.FIREBALL_2, 1),
+                new(ItemID.GOLD_GENERATOR_2, 1),
                 new(ItemID.SHIELD_2, 1),
             }), new ItemPack(ItemID.GOLD, 320)));
             

@@ -11,12 +11,12 @@ namespace Azulon.Services.Localization
         {
             // receive string from external service, or even use i2localization
             // Items
-            AddString("FIREBALL_0_title", "Small Fireball");
-            AddString("FIREBALL_0_description", "Small magic fireball");
-            AddString("FIREBALL_1_title", "Small Fireball");
-            AddString("FIREBALL_1_description", "Small magic fireball");
-            AddString("FIREBALL_2_title", "Small Fireball");
-            AddString("FIREBALL_2_description", "Small magic fireball");
+            AddString("GOLD_GENERATOR_0_title", "Small Generator");
+            AddString("GOLD_GENERATOR_0_description", "Generates 1 gold per sec");
+            AddString("GOLD_GENERATOR_1_title", "Medium Generator");
+            AddString("GOLD_GENERATOR_1_description", "Generates 10 gold per sec");
+            AddString("GOLD_GENERATOR_2_title", "Maxi Generator");
+            AddString("GOLD_GENERATOR_2_description", "Generates 100 gold per sec");
             
             AddString("SHIELD_0_title", "Small shield");
             AddString("SHIELD_0_description", "Small non magic shield");
@@ -42,12 +42,12 @@ namespace Azulon.Services.Localization
             AddString("Events", "Events");
             
             // Shop pack titles
-            AddString("Fireball_0_Shop_title", "Fireball 0");
-            AddString("Fireball_0_Shop_description", "Fireball 0 descr");
-            AddString("Fireball_1_Shop_title", "Fireball 1");
-            AddString("Fireball_1_Shop_description", "Fireball 0 descr");
-            AddString("Fireball_2_Shop_title", "Fireball 2");
-            AddString("Fireball_2_Shop_description", "Fireball 0 descr");
+            AddString("GOLD_GENERATOR_0_Shop_title", "Small Generator");
+            AddString("GOLD_GENERATOR_0_Shop_description", "Generates 1 gold per sec");
+            AddString("GOLD_GENERATOR_1_Shop_title", "Medium Generator");
+            AddString("GOLD_GENERATOR_1_Shop_description", "Generates 10 gold per sec");
+            AddString("GOLD_GENERATOR_2_Shop_title", "Maxi Generator");
+            AddString("GOLD_GENERATOR_2_Shop_description", "Generates 10 gold per sec");
             AddString("Shield_0_Shop_title", "Shield 0");
             AddString("Shield_0_Shop_description", "Shield 0 descr");
             AddString("Shield_1_Shop_title", "Shield 1");

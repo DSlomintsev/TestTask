@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 689ad8bdcca54375bd9d0aa859795ad9, type: 3}
-  m_Name: Fireball_2SO
+  m_Name: GoldGenerator_0SO
   m_EditorClassIdentifier: Azulon.Runtime::Azulon.Configs.Inventory.Items.AttackItemSO
-  Id: 4
+  Id: 2
   CategoryId: 1
+  Actions:
+  - {fileID: 11400000, guid: 9a5405586d12f4de3898023f36c08eda, type: 2}
   Damage: 0

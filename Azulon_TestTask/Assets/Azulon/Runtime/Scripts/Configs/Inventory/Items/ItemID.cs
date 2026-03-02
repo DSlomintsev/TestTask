@@ -4,9 +4,9 @@ namespace Azulon.Configs.Inventory.Items
     {
         NONE,
         GOLD,
-        FIREBALL_0,
-        FIREBALL_1,
-        FIREBALL_2,
+        GOLD_GENERATOR_0,
+        GOLD_GENERATOR_1,
+        GOLD_GENERATOR_2,
         SHIELD_0,
         SHIELD_1,
         SHIELD_2,
