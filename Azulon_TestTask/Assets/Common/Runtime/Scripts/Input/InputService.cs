@@ -1,4 +1,5 @@
 using Common.Services;
+using Common.Utils;
 using UnityEngine;
 
 namespace Common.Input
@@ -7,13 +8,15 @@ namespace Common.Input
     {
         public InputReader InputReader;
 
+        public InputService(InputReader inputReader)
+        {
+            InputReader = inputReader;
+            InputReader.Init();
+        }
+
         protected override void OnInit()
         {
             base.OnInit();
-
-            Debug.Log("InputService Init");
-            InputReader = Resources.Load<InputReader>("Common/Input/InputReader");
-            InputReader.Init();
         }
     }
 }

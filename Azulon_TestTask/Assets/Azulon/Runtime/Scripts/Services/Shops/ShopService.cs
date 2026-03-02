@@ -62,6 +62,12 @@ namespace Azulon.Services.Shops
                 new(ItemID.FIREBALL_2, 1),
                 new(ItemID.SHIELD_2, 1),
             }), new ItemPack(ItemID.GOLD, 320)));
+            
+            _shopModel.AddItem(new ShopItemConfig("Skin", "Events", new ItemPacks(new()
+            {
+                new(ItemID.SKIN_0, 1),
+                new(ItemID.SHIELD_2, 1),
+            }), new ItemPack(ItemID.GOLD, 100)));
         }
 
         public void BuyItem(string playerId, string itemId, Action<bool> successCallback, Action<bool> failCallback)

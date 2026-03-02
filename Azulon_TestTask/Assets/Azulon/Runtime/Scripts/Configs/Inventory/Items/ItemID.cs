@@ -10,5 +10,6 @@ namespace Azulon.Configs.Inventory.Items
         SHIELD_0,
         SHIELD_1,
         SHIELD_2,
+        SKIN_0,
     }
 }

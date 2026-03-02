@@ -25,10 +25,14 @@ namespace Azulon.Services.Localization
             AddString("SHIELD_2_title", "Small shield");
             AddString("SHIELD_2_description", "Small non magic shield");
             
+            AddString("SKIN_0_title", "Green skin");
+            AddString("SKIN_0_description", "Some description");
+            
             // Inventory Categories
             AddString("NONE", "ALL");
-            AddString("ATTACK", "ALL");
-            AddString("DEFENSE", "ALL");
+            AddString("ATTACK", "ATTACK");
+            AddString("DEFENSE", "DEFENSE");
+            AddString("SKIN", "SKIN");
             
             // Shop Categories
             AddString("LightWeapon", "Light Weapon");
@@ -52,6 +56,8 @@ namespace Azulon.Services.Localization
             AddString("Shield_2_Shop_description", "Shield 2 descr");
             AddString("AllInOnePack_title", "All In One Pack");
             AddString("AllInOnePack_description", "Cool one");
+            AddString("Skin_title", "Skin pack");
+            AddString("Skin_description", "Green");
 
             // Dialog titles
             AddString("Inventory", "Inventory");

@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: PrefabsSO
   m_EditorClassIdentifier: DSiT.Azulon.Runtime::Azulon.Configs.PrefabsSO
   UIContainer: {fileID: 1501154649550547817, guid: 28a468cc277f041348b2712ce7081446, type: 3}
+  InputReader: {fileID: 11400000, guid: d0004b25f37844229a323cc921729514, type: 2}
+  PlayerGfx: {fileID: 7585687837138075823, guid: 3167f040c74784d4e9215cfaac6ac0f7, type: 3}

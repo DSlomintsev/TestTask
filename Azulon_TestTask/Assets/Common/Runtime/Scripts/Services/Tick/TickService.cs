@@ -294,6 +294,7 @@ namespace Common.Services.Tick
 
         public void FixedTick()
         {
+            Debug.Log("F");
             var time =  Time.fixedDeltaTime;
             for (_fixTickIndexActionsIndex = 0; _fixTickIndexActionsIndex < _fixTickIndexActions.Count; _fixTickIndexActionsIndex++)
             {

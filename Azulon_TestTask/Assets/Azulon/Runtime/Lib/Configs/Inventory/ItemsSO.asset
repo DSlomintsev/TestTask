@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Azulon.Runtime::Azulon.Configs.Inventory.Items.ItemsSO
   Items:
   - {fileID: 11400000, guid: e020fb4a3940d4b9687d033eb373af98, type: 2}
+  - {fileID: 11400000, guid: a6e1d7dc8dff04bddb10474902a5f156, type: 2}
+  - {fileID: 11400000, guid: 09bd52f2c6b7b41f2b78f5c6b7e5598b, type: 2}
+  - {fileID: 11400000, guid: cb2f325a6fa1e4bceabd3c9fa1f17548, type: 2}
+  - {fileID: 11400000, guid: 0fa523e36cb6d43aa9790753c810c599, type: 2}
+  - {fileID: 11400000, guid: b0bad187e8f5240cca7cc3f6061ef3f7, type: 2}
+  - {fileID: 11400000, guid: 4c99dc40ae2be42939ae69bd99c8d096, type: 2}

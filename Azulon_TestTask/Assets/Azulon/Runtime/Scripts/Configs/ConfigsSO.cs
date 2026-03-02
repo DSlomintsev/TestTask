@@ -10,5 +10,6 @@ namespace Azulon.Configs
         public PrefabsSO Prefabs;
         public ItemsSO Items;
         public DialogsSO Dialogs;
+        public IconsSO Icons;
     }
 }

@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 689ad8bdcca54375bd9d0aa859795ad9, type: 3}
-  m_Name: FireballSO
-  m_EditorClassIdentifier: Azulon.Runtime::Azulon.Configs.Inventory.Items.AttackItemSO
-  Id: 2
-  CategoryId: 1
-  Damage: 0
+  m_Script: {fileID: 11500000, guid: ac892e01ea8941b9bd475f7f82efa203, type: 3}
+  m_Name: IconsSO
+  m_EditorClassIdentifier: DSiT.Azulon.Runtime::Azulon.Configs.UI.IconsSO
+  Items: {fileID: 100100200, guid: 92d24a36926fd4a8da5f0b9008d97619, type: 3}

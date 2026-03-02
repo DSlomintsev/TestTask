@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Azulon.Configs.Actions;
 using UnityEngine;
 
 namespace Azulon.Configs.Inventory.Items
@@ -6,5 +8,6 @@ namespace Azulon.Configs.Inventory.Items
     {
         public ItemID Id;
         public ItemCategoryID CategoryId;
+        public List<ItemActionSO> Actions;
     }
 }

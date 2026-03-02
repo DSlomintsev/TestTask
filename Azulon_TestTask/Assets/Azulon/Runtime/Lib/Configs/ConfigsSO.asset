@@ -15,3 +15,4 @@ MonoBehaviour:
   Prefabs: {fileID: 11400000, guid: 2d3fc8d52c20f46a7b107d06d7621cce, type: 2}
   Items: {fileID: 11400000, guid: b596a45e108d144b2b579b0a7f60b682, type: 2}
   Dialogs: {fileID: 11400000, guid: 4d61799af687b4f1cb4991630f3ec0fe, type: 2}
+  Icons: {fileID: 11400000, guid: 410cab6ce87a14f38b142421af7b8c99, type: 2}

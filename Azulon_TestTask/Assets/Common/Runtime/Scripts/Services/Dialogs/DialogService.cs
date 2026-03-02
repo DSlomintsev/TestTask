@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Common.Components.UI;
 using Common.Services.UIs;
 using Common.UI.Dialogs.BaseDialog;
 using Common.Utils;
@@ -9,6 +10,7 @@ namespace Common.Services.Dialogs
 {
     public class DialogService : BaseService
     {
+        private ExtBtn _modalBkg;
         private List<BaseDialogView> _dialogPrefabs;
         
         private UIService _uiService;
@@ -22,8 +24,9 @@ namespace Common.Services.Dialogs
         private readonly List<DialogItem> _dialogs = new();
         public List<DialogItem> Dialogs => _dialogs;
         
-        public DialogService(List<BaseDialogView> dialogPrefabs)
+        public DialogService(ExtBtn modalBkg, List<BaseDialogView> dialogPrefabs)
         {
+            _modalBkg = modalBkg;
             _dialogPrefabs = dialogPrefabs;
         }
 
@@ -75,6 +78,13 @@ namespace Common.Services.Dialogs
             var view = SpawnUtils.Instantiate<BaseDialogView>(GetPrefabByName(viewName), parentContainer);
             view.transform.SetAsLastSibling();
 
+            if (config.IsModal)
+            {
+                var modalBkg = SpawnUtils.Instantiate(_modalBkg, view.transform);
+                modalBkg.transform.SetAsFirstSibling();
+                view.ModalBkg = modalBkg;    
+            }
+
             var mediator = new T();
             mediator.Init(view);
 
@@ -119,6 +129,9 @@ namespace Common.Services.Dialogs
             view.DeInit();
             SpawnUtils.Destroy(view.gameObject);
         }
+
+        public static BaseDialogConfig DialogConfig = new BaseDialogConfig { IsModal = false };
+        public static BaseDialogConfig ModalDialogConfig = new BaseDialogConfig { IsModal = true };
     }
 
     public class DialogItem
@@ -131,4 +144,6 @@ namespace Common.Services.Dialogs
     {
         public bool IsModal { get; set; }
     }
+    
+    
 }

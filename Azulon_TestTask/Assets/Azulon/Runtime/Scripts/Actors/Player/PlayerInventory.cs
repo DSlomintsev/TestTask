@@ -5,6 +5,6 @@ namespace Azulon.Actors.Player
 {
     public class PlayerInventory
     {
-        public List<ItemSO> Items;
+        
     }
 }

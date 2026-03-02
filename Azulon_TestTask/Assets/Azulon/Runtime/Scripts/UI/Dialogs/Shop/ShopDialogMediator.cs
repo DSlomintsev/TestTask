@@ -1,10 +1,10 @@
+using Azulon.Models;
 using Azulon.Services.Localization;
 using Azulon.Services.Shops;
 using Azulon.Services.Shops.Commands;
 using Azulon.Services.Shops.Data;
 using Common.Models;
 using Common.Services;
-using Common.Services.Dialogs;
 using Common.UI.Dialogs.BaseDialog;
 
 namespace Azulon.UI.Dialogs.Shop
@@ -21,13 +21,14 @@ namespace Azulon.UI.Dialogs.Shop
             _shopModel = ModelsLocator.Get<ShopModel>();
             
             _view.SetTitle(ServiceLocator.Get<LocalizationService>().GetLocale("Shop"));
-            _view.SetItems(_shopModel.Items);
             _view.SetActions(OnItemClick, CloseDialog);
+            _view.SetItems(_shopModel.Items);
         }
 
         private void OnItemClick(ShopItemConfig item)
         {
-            //BuyItemCommand.Execute(item)
+            var playerController = ModelsLocator.Get<PlayersModel>().CurrentPlayer;
+            BuyItemCommand.Do(playerController.Value, item);
         }
 
         public override void DeInit()

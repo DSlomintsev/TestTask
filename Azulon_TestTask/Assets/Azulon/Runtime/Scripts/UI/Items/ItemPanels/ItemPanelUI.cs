@@ -37,10 +37,13 @@ namespace Azulon.UI.Items.ItemPanels
             _itemDataType = typeof(TItemData);
 
             GetCategories();
-            _currentCategory = _categoriesData[0];
+            if (_categoriesData.Count > 0)
+            {
+                _currentCategory = _categoriesData[0];
 
-            UpdateCategoriesView();
-            UpdateItemsView();
+                UpdateCategoriesView();
+                UpdateItemsView();    
+            }
         }
 
         private void UpdateCategoriesView()

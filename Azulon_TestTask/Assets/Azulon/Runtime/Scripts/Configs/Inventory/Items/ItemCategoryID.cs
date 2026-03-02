@@ -4,6 +4,7 @@ namespace Azulon.Configs.Inventory.Items
     {
         NONE,
         ATTACK,
-        DEFENSE
+        DEFENSE,
+        SKIN
     }
 }

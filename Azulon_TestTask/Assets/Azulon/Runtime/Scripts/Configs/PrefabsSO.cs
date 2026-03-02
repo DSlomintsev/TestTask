@@ -1,3 +1,5 @@
+using Azulon.Actors.Player;
+using Common.Input;
 using Common.Services.UIs;
 using UnityEngine;
 
@@ -7,5 +9,7 @@ namespace Azulon.Configs
     public class PrefabsSO:ScriptableObject
     {
         public UIContainer UIContainer;
+        public InputReader InputReader;
+        public PlayerGfx PlayerGfx;
     }
 }

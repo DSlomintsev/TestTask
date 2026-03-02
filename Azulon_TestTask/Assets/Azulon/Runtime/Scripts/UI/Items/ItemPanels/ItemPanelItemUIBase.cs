@@ -13,18 +13,14 @@ namespace Azulon.UI.Items.ItemPanels
         [SerializeField] protected ExtBtn actionBtn;
 
         private Action<T> _click;
-        protected T _itemSO;
+        protected T _itemData;
 
-        public void SetAction(Action<T> click)
-        {
-            _click =  click;
-        }
-
-        public void OnClick()=>_click.Call(_itemSO);
+        public void SetAction(Action<T> click) => _click = click;
+        public void OnClick() => _click.Call(_itemData);
 
         public void SetData(T itemSO)
         {
-            _itemSO = itemSO;
+            _itemData = itemSO;
 
             UpdateView();
         }

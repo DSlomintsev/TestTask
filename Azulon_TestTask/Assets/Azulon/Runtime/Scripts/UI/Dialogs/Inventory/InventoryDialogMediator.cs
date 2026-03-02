@@ -1,7 +1,7 @@
+using System.Collections.Generic;
 using Azulon.Configs.Inventory.Items;
-using Azulon.Models;
-using Common.Models;
 using Common.UI.Dialogs.BaseDialog;
+using UnityEngine;
 
 namespace Azulon.UI.Dialogs.Inventory
 {
@@ -15,13 +15,17 @@ namespace Azulon.UI.Dialogs.Inventory
             _view = (InventoryDialogView)view;
             
             _view.SetTitle("Inventory");
-            _view.SetItems(ModelsLocator.Get<GameModel>().Configs.Items.Items);
             _view.SetActions(ClickAction, CloseDialog);
+        }
+
+        public void SetItems(List<ItemSO> items)
+        {
+            _view.SetItems(items);
         }
 
         private void ClickAction(ItemSO item)
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Inventory ClickAction");
         }
 
         public override void DeInit()

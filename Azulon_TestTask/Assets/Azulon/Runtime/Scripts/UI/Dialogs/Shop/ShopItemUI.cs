@@ -1,5 +1,6 @@
+using System.Text;
 using Azulon.Services.Localization;
-using Azulon.Services.Shops;
+using Azulon.Services.Resource;
 using Azulon.Services.Shops.Data;
 using Azulon.UI.Items.ItemPanels;
 using Common.Components.UI;
@@ -13,11 +14,11 @@ namespace Azulon.UI.Dialogs.Shop
         
         protected override void UpdateView()
         {
-            var id = _itemSO.Id;
+            var id = _itemData.Id;
             titleLabel.SetText(ServiceLocator.Get<LocalizationService>().GetLocale(id + LocalizationService.ITEM_TITLE_POSTIFX));
             descriptionLabel.SetText(ServiceLocator.Get<LocalizationService>().GetLocale(id + LocalizationService.ITEM_DESCRIPTION_POSTIFX));
-            //icon.sprite = ServiceLocator.Get<LocalizationService>().GetLocale(id);
-            price.SetText(_itemSO.Price.ToString());
+            icon.sprite = ServiceLocator.Get<ResourceService>().GetIcon(id);
+            price.SetText($"{_itemData.Price.Id}: {_itemData.Price.Amount}");
         }
     }
 }

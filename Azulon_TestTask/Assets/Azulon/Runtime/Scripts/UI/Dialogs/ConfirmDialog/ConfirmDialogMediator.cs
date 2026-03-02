@@ -9,7 +9,13 @@ namespace Azulon.UI.Dialogs.ConfirmDialog
         public override void Init(BaseDialogView view)
         {
             base.Init(view);
+
             _view = (ConfirmDialogView)view;
+            _view.SetActions(Confirm, CloseDialog);
+        }
+
+        private void Confirm()
+        {
         }
 
         public override void DeInit()
