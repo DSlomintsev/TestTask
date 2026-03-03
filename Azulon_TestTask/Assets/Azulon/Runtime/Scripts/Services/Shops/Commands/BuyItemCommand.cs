@@ -37,7 +37,7 @@ namespace Azulon.Services.Shops.Commands
                 ApplyAction(entity, itemAction);
         }
 
-        private static void ApplyAction(IEntity entity, ItemActionSO itemActionSO)
+        private static void ApplyAction(IEntity entity, ActionSO itemActionSO)
         {
             switch (itemActionSO)
             {

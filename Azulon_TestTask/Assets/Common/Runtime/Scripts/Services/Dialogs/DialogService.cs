@@ -94,6 +94,13 @@ namespace Common.Services.Dialogs
             return new DialogItem {View = view, Mediator = mediator };
         }
 
+        public void CloseDialog<T>() where T : BaseDialogMediator, new()
+        {
+            var dialogItem = GetDialog<T>();
+            if(dialogItem == null) return;
+
+            CloseDialog(dialogItem);
+        }
         public void CloseDialog(BaseDialogMediator dialogMediator) => CloseDialog(GetDialogByMediator(dialogMediator));
 
         public void CloseDialog(DialogItem dialogItem)

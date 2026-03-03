@@ -8,6 +8,6 @@ namespace Azulon.Configs.Inventory.Items
     {
         public ItemID Id;
         public ItemCategoryID CategoryId;
-        public List<ItemActionSO> Actions;
+        public List<ActionSO> Actions;
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Azulon.Actors.Entities.Components
 {
-    public class PlayerSkinComponent:ComponentBase
+    public class PlayerSkinComponent:ComponentBase, ISkinComponent
     {
         private static readonly int BaseColor = Shader.PropertyToID("_BaseColor");
 
